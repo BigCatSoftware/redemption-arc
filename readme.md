@@ -1551,9 +1551,9 @@ WHERE t.status = 'resolved';
 ## Weekly Checklist
 
 ### Week 1: Arrays & Hashing
-- [ ] Read CTCI Chapter 1
+- [x] Read CTCI Chapter 1
 - [ ] Read Learning SQL Chapters 1-3
-- [ ] Memorize 3 templates from memory
+- [x] Memorize 3 templates from memory
 - [ ] Complete 20 LeetCode problems
 - [ ] Set up PostgreSQL + create ticket database schema
 - [ ] Insert sample data
