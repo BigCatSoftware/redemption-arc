@@ -2,12 +2,13 @@
 
 ### *From "we'll keep your resume on file" to "when can you start?"*
 
-> **Mission:** Deep-dive into algorithm patterns and SQL fundamentals to land a software engineering role ASAP. This is the training montage. The dramatic music is playing. The interviewer doesn't stand a chance.
+> **Mission:** Deep-dive into algorithm patterns, SQL fundamentals, and ship a full-stack Spring Boot project to land a software engineering role by end of January. This is the training montage. The dramatic music is playing. The interviewer doesn't stand a chance.
 
 **Start Date:** Week of December 9, 2024  
+**MVP Deadline:** December 31, 2024 — Project on resume, deployed, ready to demo  
 **Daily Commitment:** 3-4 hours focused work  
-**Philosophy:** Depth over breadth. Master each pattern before moving on.  
-**Vibe:** Rocky running up the steps, but the steps are LeetCode problems and the meat punching is PostgreSQL.  
+**Philosophy:** Depth over breadth. Ship fast. Iterate in January.  
+**Vibe:** Rocky running up the steps, but the steps are LeetCode problems and the meat punching is Spring Boot controllers.  
 **Language:** Java ☕ — Because we're going full enterprise-ready for this redemption arc.
 
 ---
@@ -17,12 +18,14 @@
 > *Jump around like your career depends on it (because it does)*
 
 ### Main Sections
+
 - [📚 Resources](#-resources)
 - [☕ Java Quick Reference](#-java-quick-reference) ← *Your new best friend*
-- [🗓️ Daily Structure](#️-daily-structure)
+- [🗓️ Daily Structure](#%EF%B8%8F-daily-structure)
 - [📋 Weekly Overview](#-weekly-overview)
 
 ### The Training Arc
+
 | Week | Topic | Link |
 |------|-------|------|
 | 1 | Arrays & Hashing | [Week 1](#week-1-arrays--hashing) |
@@ -35,6 +38,7 @@
 | 8 | DP 2D, Tries, Union-Find, Intervals | [Week 8](#week-8-dp-2d-tries-union-find-intervals) |
 
 ### The Finale
+
 - [📊 Progress Tracker](#-progress-tracker)
 - [🎬 The Climax](#-the-climax)
 - [💡 Daily Reminders](#-daily-reminders)
@@ -47,17 +51,32 @@
 [↑ Back to Navigation](#-quick-navigation)
 
 ### Algorithms
+
 - **CTCI 6th Edition** — Theory companion for each topic
 - **NeetCode.io** — Video explanations when stuck
 - **LeetCode** — All practice problems
 
 ### SQL
-- **Learning SQL, 3rd Edition by Alan Beaulieu** — Primary textbook
+
+- **Learning SQL, 3rd Edition by Alan Beaulieu** — Chapters 2-9 (fundamentals focused)
 - **PostgreSQL** — Your database of choice
-- **LeetCode SQL** — Supplementary practice
+
+### Spring Boot & Backend
+
+- **Spring Initializr** — https://start.spring.io (Spring Web, JDBC, PostgreSQL Driver)
+- **Spring Guides** — https://spring.io/guides/gs/relational-data-access/
+- **Baeldung** — https://www.baeldung.com/spring-jdbc-jdbctemplate (JDBC patterns)
+
+### React
+
+- **React Docs** — https://react.dev/learn (Quick Start + Tutorial)
+- **Vite** — https://vitejs.dev/guide/ (Project setup)
 
 ### Your Project
-- **Ticket Support Database** — Build incrementally each week, use in future larger project
+
+- **Ticket Support System** — Full-stack: Spring Boot + JDBC + PostgreSQL + React
+- **MVP by Dec 31** — Deploy and put on resume
+- **January** — Add features, polish, interview prep
 
 ---
 
@@ -68,12 +87,14 @@
 > *Keep this open in another tab. You'll need it. Trust the redemption arc.*
 
 ### Essential Imports
+
 ```java
 import java.util.*;  // List, Map, Set, Queue, PriorityQueue, etc.
 import java.util.stream.*;  // For stream operations
 ```
 
 ### Data Structure Initialization
+
 ```java
 // Arrays
 int[] arr = new int[10];
@@ -125,6 +146,7 @@ pq.peek();
 ```
 
 ### Common Operations
+
 ```java
 // Array sorting
 Arrays.sort(arr);  // ascending
@@ -175,6 +197,7 @@ Character.toUpperCase(c);
 ```
 
 ### Iteration Patterns
+
 ```java
 // Array
 for (int i = 0; i < arr.length; i++) { }
@@ -205,6 +228,7 @@ for (int[] dir : directions) {
 ```
 
 ### Common Gotchas
+
 ```java
 // Integer comparison (use .equals() for Integer objects!)
 Integer a = 128, b = 128;
@@ -234,7 +258,7 @@ if (list == null || list.isEmpty()) return;
 | Time Block | Activity |
 |------------|----------|
 | **Morning (2 hrs)** | Algorithm problems (3-4 problems) |
-| **Afternoon (1 hr)** | SQL reading + database project |
+| **Afternoon (1.5 hrs)** | Project work (Spring Boot / React) + SQL reading |
 | **Evening (30 min)** | Review templates, job applications |
 
 **Sundays:** Review week's templates from memory. Re-attempt any problems you struggled with. Stare dramatically out a window contemplating your journey.
@@ -245,40 +269,44 @@ if (list == null || list.isEmpty()) return;
 
 [↑ Back to Navigation](#-quick-navigation)
 
-| Week | Algorithm Topics | Problems | CTCI Chapters | Learning SQL Chapters |
-|------|------------------|----------|---------------|----------------------|
-| 1 | Arrays & Hashing | 20 | Ch 1 | Ch 1-3 |
-| 2 | Two Pointers & Sliding Window | 20 | Ch 1 (cont.) | Ch 4-5 |
-| 3 | Binary Search & Stacks | 20 | Ch 3, 10 | Ch 6-7 |
-| 4 | Linked Lists & Trees | 20 | Ch 2, 4 | Ch 8-9 |
-| 5 | Trees (cont.) & Graphs | 20 | Ch 4 (cont.) | Ch 10-11 |
-| 6 | Backtracking & Heaps | 20 | Ch 8 | Ch 12-13 |
-| 7 | Dynamic Programming (1D) | 20 | Ch 8 (cont.) | Ch 14-15 |
-| 8 | DP (2D), Tries, Intervals | 20 | Ch 8, 16 | Ch 16 + Review |
+| Week | Algorithm Topics | Problems | CTCI Chapters | SQL Chapters | Project Milestone |
+|------|------------------|----------|---------------|--------------|-------------------|
+| 1 | Arrays & Hashing | 20 | Ch 1 | Ch 2-3 | Schema + Spring Boot skeleton |
+| 2 | Two Pointers & Sliding Window | 20 | Ch 1 (cont.) | Ch 4-5 | JDBC repos + REST endpoints |
+| 3 | Binary Search & Stacks | 20 | Ch 3, 10 | Ch 6-7 | React basics + API integration |
+| 4 | Linked Lists & Trees | 20 | Ch 2, 4 | Ch 8-9 | **MVP COMPLETE + DEPLOY** |
+| 5 | Trees (cont.) & Graphs | 20 | Ch 4 (cont.) | — | Feature: Comments system |
+| 6 | Backtracking & Heaps | 20 | Ch 8 | — | Feature: Dashboard metrics |
+| 7 | Dynamic Programming (1D) | 20 | Ch 8 (cont.) | — | Feature: Search + filters |
+| 8 | DP (2D), Tries, Intervals | 20 | Ch 8, 16 | — | Polish + interview prep |
 
-**Total: 160 algorithm problems + complete SQL fundamentals**
+**Total: 160 algorithm problems + SQL fundamentals + deployed full-stack project**
 
 ---
 
 # Week 1: Arrays & Hashing
+
 ### *Act I: The Hero Discovers Hash Maps Exist*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
+
 **Chapter 1: Arrays and Strings**
+
 - Hash table fundamentals
 - String manipulation techniques
 - Big O for array operations
 
 ## Learning SQL
-**Chapter 1: A Little Background** — Database history, SQL overview  
-**Chapter 2: Creating and Populating a Database** — CREATE TABLE, INSERT  
-**Chapter 3: Query Primer** — SELECT basics, WHERE, ORDER BY
+
+**Chapter 2: Creating and Populating a Database** — CREATE TABLE, INSERT, data types  
+**Chapter 3: Query Primer** — SELECT basics, WHERE, ORDER BY, LIMIT
 
 ## Templates to Memorize
 
 ### Hash Map Frequency Counter
+
 ```java
 public Map<Integer, Integer> frequencyCount(int[] arr) {
     Map<Integer, Integer> freq = new HashMap<>();
@@ -288,9 +316,11 @@ public Map<Integer, Integer> frequencyCount(int[] arr) {
     return freq;
 }
 ```
+
 **Use for:** Anagrams, duplicates, counting problems, two-sum variants
 
 ### Hash Set for O(1) Lookup
+
 ```java
 public boolean hasDuplicate(int[] arr) {
     Set<Integer> seen = new HashSet<>();
@@ -303,9 +333,11 @@ public boolean hasDuplicate(int[] arr) {
     return false;
 }
 ```
+
 **Use for:** Duplicate detection, membership testing, complement finding
 
 ### Prefix Sum Array
+
 ```java
 public int[] prefixSum(int[] arr) {
     int[] prefix = new int[arr.length + 1];
@@ -316,11 +348,13 @@ public int[] prefixSum(int[] arr) {
     return prefix;
 }
 ```
+
 **Use for:** Range sum queries, subarray sums
 
 ## LeetCode Problems (20)
 
 ### Easy (8 problems)
+
 1. **Two Sum** — Hash map lookup pattern
 2. **Contains Duplicate** — Set membership
 3. **Valid Anagram** — Frequency counter comparison
@@ -331,6 +365,7 @@ public int[] prefixSum(int[] arr) {
 8. **Find All Numbers Disappeared in Array** — In-place marking
 
 ### Medium (10 problems)
+
 9. **Group Anagrams** — Hash map with sorted key
 10. **Top K Frequent Elements** — Hash map + heap or bucket sort
 11. **Product of Array Except Self** — Prefix/suffix products
@@ -343,12 +378,21 @@ public int[] prefixSum(int[] arr) {
 18. **Set Matrix Zeroes** — In-place markers
 
 ### Hard (2 problems)
+
 19. **First Missing Positive** — Cyclic sort / index as hash
 20. **Longest Substring with At Most K Distinct Characters** — Hash map sliding window intro
 
-## SQL Project: Ticket Support Database — Week 1
+## Project: Ticket Support System — Week 1
 
-### Schema Design
+### Goals
+
+- [ ] Design database schema
+- [ ] Set up Spring Boot project
+- [ ] Create project structure
+- [ ] Connect to PostgreSQL
+
+### Database Schema
+
 ```sql
 -- Create the database
 CREATE DATABASE ticket_support;
@@ -380,33 +424,69 @@ CREATE TABLE categories (
     name VARCHAR(50) UNIQUE NOT NULL,
     description TEXT
 );
+
+-- Add category reference to tickets
+ALTER TABLE tickets ADD COLUMN category_id INTEGER REFERENCES categories(category_id);
+```
+
+### Spring Boot Setup
+
+1. **Go to start.spring.io** with these dependencies:
+   - Spring Web
+   - Spring JDBC
+   - PostgreSQL Driver
+
+2. **Project structure:**
+```
+src/main/java/com/ticketsupport/
+├── TicketSupportApplication.java
+├── controller/
+├── service/
+├── repository/
+├── model/
+└── config/
+```
+
+3. **application.properties:**
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/ticket_support
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 ```
 
 ### Week 1 Tasks
+
 - [ ] Install PostgreSQL locally
 - [ ] Create ticket_support database
 - [ ] Create users, tickets, categories tables
 - [ ] Insert 20+ sample users (mix of customers, agents, admins)
 - [ ] Insert 50+ sample tickets with varying statuses/priorities
-- [ ] Practice SELECT with WHERE, ORDER BY, LIMIT
+- [ ] Generate Spring Boot project from start.spring.io
+- [ ] Set up project structure (controller/service/repository/model)
+- [ ] Configure database connection
+- [ ] Create model classes: User, Ticket, Category
 
 ---
 
 # Week 2: Two Pointers & Sliding Window
+
 ### *Act I Continued: The Pointers Point Both Ways*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
+
 **Chapter 1 (continued):** Focus on in-place manipulation, string problems
 
 ## Learning SQL
+
 **Chapter 4: Filtering** — WHERE conditions, AND/OR/NOT, BETWEEN, IN, LIKE  
 **Chapter 5: Querying Multiple Tables** — INNER JOIN basics
 
 ## Templates to Memorize
 
 ### Two Pointers — Opposite Ends
+
 ```java
 public int[] twoSumSorted(int[] arr, int target) {
     int left = 0, right = arr.length - 1;
@@ -423,9 +503,11 @@ public int[] twoSumSorted(int[] arr, int target) {
     return new int[]{};
 }
 ```
+
 **Use for:** Two-sum on sorted array, container problems, palindrome validation
 
 ### Two Pointers — Same Direction (Fast/Slow)
+
 ```java
 public int removeDuplicates(int[] arr) {
     if (arr.length == 0) return 0;
@@ -439,9 +521,11 @@ public int removeDuplicates(int[] arr) {
     return slow + 1;
 }
 ```
+
 **Use for:** Remove duplicates, partitioning, linked list cycle detection
 
 ### Fixed-Size Sliding Window
+
 ```java
 public int maxSumSubarray(int[] arr, int k) {
     int windowSum = 0;
@@ -456,9 +540,11 @@ public int maxSumSubarray(int[] arr, int k) {
     return maxSum;
 }
 ```
+
 **Use for:** Max/min/avg of fixed window, any k-element aggregate
 
 ### Variable-Size Sliding Window
+
 ```java
 public int minSubarrayLen(int target, int[] arr) {
     int left = 0, windowSum = 0;
@@ -474,11 +560,13 @@ public int minSubarrayLen(int target, int[] arr) {
     return minLen == Integer.MAX_VALUE ? 0 : minLen;
 }
 ```
+
 **Use for:** Minimum window, maximum with constraint, substring problems
 
 ## LeetCode Problems (20)
 
 ### Two Pointers (10 problems)
+
 1. **Valid Palindrome** (Easy) — Two pointers opposite ends with char filtering
 2. **Two Sum II - Sorted Array** (Medium) — Classic opposite ends
 3. **3Sum** (Medium) — Sort + two pointers with outer loop
@@ -491,6 +579,7 @@ public int minSubarrayLen(int target, int[] arr) {
 10. **Boats to Save People** (Medium) — Greedy two pointers
 
 ### Sliding Window (10 problems)
+
 11. **Best Time to Buy and Sell Stock** (Easy) — Track min price
 12. **Maximum Average Subarray I** (Easy) — Fixed window
 13. **Longest Substring Without Repeating Characters** (Medium) — Variable window + set
@@ -502,9 +591,16 @@ public int minSubarrayLen(int target, int[] arr) {
 19. **Minimum Window Substring** (Hard) — Variable window + hash map
 20. **Sliding Window Maximum** (Hard) — Monotonic deque
 
-## SQL Project: Week 2
+## Project: Week 2
+
+### Goals
+
+- [ ] Build JDBC repository layer
+- [ ] Create REST controllers
+- [ ] Implement basic CRUD operations
 
 ### New Table
+
 ```sql
 -- Ticket assignments (agents assigned to tickets)
 CREATE TABLE ticket_assignments (
@@ -513,37 +609,127 @@ CREATE TABLE ticket_assignments (
     agent_id INTEGER REFERENCES users(user_id),
     assigned_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
--- Ticket-category relationship
-ALTER TABLE tickets ADD COLUMN category_id INTEGER REFERENCES categories(category_id);
+### Repository Layer (JDBC)
+
+```java
+@Repository
+public class TicketRepository {
+    
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+    
+    public List<Ticket> findAll() {
+        return jdbcTemplate.query(
+            "SELECT * FROM tickets ORDER BY created_at DESC",
+            new TicketRowMapper()
+        );
+    }
+    
+    public Optional<Ticket> findById(Long id) {
+        List<Ticket> results = jdbcTemplate.query(
+            "SELECT * FROM tickets WHERE ticket_id = ?",
+            new TicketRowMapper(),
+            id
+        );
+        return results.isEmpty() ? Optional.empty() : Optional.of(results.get(0));
+    }
+    
+    public Ticket save(Ticket ticket) {
+        jdbcTemplate.update(
+            "INSERT INTO tickets (user_id, subject, description, status, priority) VALUES (?, ?, ?, ?, ?)",
+            ticket.getUserId(),
+            ticket.getSubject(),
+            ticket.getDescription(),
+            ticket.getStatus(),
+            ticket.getPriority()
+        );
+        return ticket;
+    }
+    
+    public void update(Ticket ticket) {
+        jdbcTemplate.update(
+            "UPDATE tickets SET subject = ?, description = ?, status = ?, priority = ?, updated_at = NOW() WHERE ticket_id = ?",
+            ticket.getSubject(),
+            ticket.getDescription(),
+            ticket.getStatus(),
+            ticket.getPriority(),
+            ticket.getTicketId()
+        );
+    }
+}
+```
+
+### REST Controller
+
+```java
+@RestController
+@RequestMapping("/api/tickets")
+public class TicketController {
+    
+    @Autowired
+    private TicketService ticketService;
+    
+    @GetMapping
+    public List<Ticket> getAllTickets() {
+        return ticketService.findAll();
+    }
+    
+    @GetMapping("/{id}")
+    public ResponseEntity<Ticket> getTicket(@PathVariable Long id) {
+        return ticketService.findById(id)
+            .map(ResponseEntity::ok)
+            .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @PostMapping
+    public Ticket createTicket(@RequestBody Ticket ticket) {
+        return ticketService.save(ticket);
+    }
+    
+    @PutMapping("/{id}")
+    public ResponseEntity<Ticket> updateTicket(@PathVariable Long id, @RequestBody Ticket ticket) {
+        ticket.setTicketId(id);
+        ticketService.update(ticket);
+        return ResponseEntity.ok(ticket);
+    }
+}
 ```
 
 ### Week 2 Tasks
-- [ ] Add categories (Technical, Billing, General, etc.)
-- [ ] Assign categories to existing tickets
-- [ ] Create ticket_assignments table
-- [ ] Assign agents to tickets
+
+- [ ] Create TicketRepository with JDBC
+- [ ] Create UserRepository with JDBC
+- [ ] Create TicketService layer
+- [ ] Create TicketController (GET all, GET by id, POST, PUT)
+- [ ] Create UserController (GET all, GET by id)
+- [ ] Test endpoints with Postman or curl
+- [ ] Add ticket_assignments table
 - [ ] Practice JOINs: tickets with users, tickets with categories
-- [ ] Write query: "Show all tickets with customer name and assigned agent name"
 
 ---
 
 # Week 3: Binary Search & Stacks
+
 ### *Act II: The Plot Thickens (Logarithmically)*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
+
 **Chapter 3: Stacks and Queues** — Stack operations, implementing with arrays/linked lists  
 **Chapter 10: Sorting and Searching** — Binary search fundamentals
 
 ## Learning SQL
+
 **Chapter 6: Working with Sets** — UNION, INTERSECT, EXCEPT  
 **Chapter 7: Data Generation, Manipulation, and Conversion** — String/number/date functions
 
 ## Templates to Memorize
 
 ### Binary Search — Find Exact Value
+
 ```java
 public int binarySearch(int[] arr, int target) {
     int left = 0, right = arr.length - 1;
@@ -560,9 +746,11 @@ public int binarySearch(int[] arr, int target) {
     return -1;
 }
 ```
+
 **Use for:** Finding exact element in sorted array
 
 ### Binary Search — Find Boundary (Leftmost True)
+
 ```java
 public int binarySearchBoundary(int[] arr) {
     int left = 0, right = arr.length;  // or min/max of search space
@@ -577,9 +765,11 @@ public int binarySearchBoundary(int[] arr) {
     return left;
 }
 ```
+
 **Use for:** First bad version, search insert position, capacity problems
 
 ### Monotonic Stack (Decreasing)
+
 ```java
 public int[] nextGreaterElement(int[] arr) {
     int n = arr.length;
@@ -597,9 +787,11 @@ public int[] nextGreaterElement(int[] arr) {
     return result;
 }
 ```
+
 **Use for:** Next greater/smaller element, daily temperatures, histogram problems
 
 ### Stack for Matching
+
 ```java
 public boolean validParentheses(String s) {
     Deque<Character> stack = new ArrayDeque<>();
@@ -618,11 +810,13 @@ public boolean validParentheses(String s) {
     return stack.isEmpty();
 }
 ```
+
 **Use for:** Balanced parentheses, expression evaluation
 
 ## LeetCode Problems (20)
 
 ### Binary Search (10 problems)
+
 1. **Binary Search** (Easy) — Classic implementation
 2. **Search Insert Position** (Easy) — Boundary finding
 3. **Guess Number Higher or Lower** (Easy) — Interactive binary search
@@ -635,6 +829,7 @@ public boolean validParentheses(String s) {
 10. **Median of Two Sorted Arrays** (Hard) — Binary search on partition
 
 ### Stacks (10 problems)
+
 11. **Valid Parentheses** (Easy) — Matching brackets
 12. **Min Stack** (Medium) — Stack with O(1) minimum
 13. **Evaluate Reverse Polish Notation** (Medium) — Expression evaluation
@@ -646,46 +841,137 @@ public boolean validParentheses(String s) {
 19. **Decode String** (Medium) — Nested structure with stack
 20. **Largest Rectangle in Histogram** (Hard) — Monotonic stack classic
 
-## SQL Project: Week 3
+## Project: Week 3
 
-### New Table
-```sql
--- Ticket comments/replies
-CREATE TABLE ticket_comments (
-    comment_id SERIAL PRIMARY KEY,
-    ticket_id INTEGER REFERENCES tickets(ticket_id) ON DELETE CASCADE,
-    user_id INTEGER REFERENCES users(user_id),
-    comment_text TEXT NOT NULL,
-    is_internal BOOLEAN DEFAULT FALSE,  -- internal notes vs customer-visible
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+### Goals
+
+- [ ] Learn React fundamentals
+- [ ] Set up React + Vite frontend
+- [ ] Create basic components
+- [ ] Connect to Spring Boot API
+
+### React Project Setup
+
+```bash
+npm create vite@latest ticket-frontend -- --template react
+cd ticket-frontend
+npm install
+npm install axios
+npm run dev
+```
+
+### Project Structure
+
+```
+ticket-frontend/
+├── src/
+│   ├── components/
+│   │   ├── TicketList.jsx
+│   │   ├── TicketCard.jsx
+│   │   ├── TicketForm.jsx
+│   │   └── Navbar.jsx
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   └── main.jsx
+```
+
+### API Service
+
+```javascript
+// src/services/api.js
+import axios from 'axios';
+
+const API_BASE = 'http://localhost:8080/api';
+
+export const ticketService = {
+    getAll: () => axios.get(`${API_BASE}/tickets`),
+    getById: (id) => axios.get(`${API_BASE}/tickets/${id}`),
+    create: (ticket) => axios.post(`${API_BASE}/tickets`, ticket),
+    update: (id, ticket) => axios.put(`${API_BASE}/tickets/${id}`, ticket),
+};
+```
+
+### Basic Component
+
+```jsx
+// src/components/TicketList.jsx
+import { useState, useEffect } from 'react';
+import { ticketService } from '../services/api';
+
+function TicketList() {
+    const [tickets, setTickets] = useState([]);
+    
+    useEffect(() => {
+        ticketService.getAll()
+            .then(response => setTickets(response.data))
+            .catch(error => console.error(error));
+    }, []);
+    
+    return (
+        <div>
+            <h2>Tickets</h2>
+            {tickets.map(ticket => (
+                <div key={ticket.ticketId}>
+                    <h3>{ticket.subject}</h3>
+                    <p>Status: {ticket.status}</p>
+                    <p>Priority: {ticket.priority}</p>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default TicketList;
+```
+
+### Enable CORS in Spring Boot
+
+```java
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/api/**")
+            .allowedOrigins("http://localhost:5173")
+            .allowedMethods("GET", "POST", "PUT", "DELETE");
+    }
+}
 ```
 
 ### Week 3 Tasks
-- [ ] Create ticket_comments table
-- [ ] Insert sample comments (50+ across various tickets)
-- [ ] Practice string functions: CONCAT, SUBSTRING, UPPER/LOWER
-- [ ] Practice date functions: DATE_PART, AGE, date arithmetic
-- [ ] Write query: "Show tickets created in the last 7 days with comment count"
+
+- [ ] Complete React tutorial on react.dev
+- [ ] Set up Vite + React project
+- [ ] Create api.js service layer
+- [ ] Build TicketList component
+- [ ] Build TicketCard component
+- [ ] Build TicketForm component (create/edit)
+- [ ] Add CORS config to Spring Boot
+- [ ] Get list view working end-to-end
 
 ---
 
 # Week 4: Linked Lists & Trees (Basics)
-### *Act II Continued: Pointers Get Weird*
+
+### *Act II Continued: Pointers Get Weird — AND WE SHIP 🚀*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
+
 **Chapter 2: Linked Lists** — Runner technique, recursive approaches  
 **Chapter 4: Trees and Graphs** — Tree traversals, BST properties
 
 ## Learning SQL
+
 **Chapter 8: Grouping and Aggregates** — GROUP BY, HAVING, COUNT, SUM, AVG, MIN, MAX  
 **Chapter 9: Subqueries** — Scalar, correlated, EXISTS
 
 ## Templates to Memorize
 
 ### Linked List Reversal (Iterative)
+
 ```java
 public ListNode reverseList(ListNode head) {
     ListNode prev = null;
@@ -699,9 +985,11 @@ public ListNode reverseList(ListNode head) {
     return prev;
 }
 ```
+
 **Use for:** Reverse entire list, reverse portions, palindrome check
 
 ### Fast/Slow Pointers in Linked List
+
 ```java
 public ListNode findMiddle(ListNode head) {
     ListNode slow = head, fast = head;
@@ -712,9 +1000,11 @@ public ListNode findMiddle(ListNode head) {
     return slow;  // middle node (second middle if even)
 }
 ```
+
 **Use for:** Find middle, detect cycle (Floyd's), find cycle start
 
 ### Tree DFS (Recursive)
+
 ```java
 // Preorder: root -> left -> right
 public List<Integer> preorder(TreeNode root) {
@@ -746,9 +1036,11 @@ public List<Integer> postorder(TreeNode root) {
     return result;
 }
 ```
+
 **Use for:** Any tree traversal, path problems, tree construction
 
 ### Tree BFS (Level Order)
+
 ```java
 public List<List<Integer>> levelOrder(TreeNode root) {
     List<List<Integer>> result = new ArrayList<>();
@@ -772,11 +1064,13 @@ public List<List<Integer>> levelOrder(TreeNode root) {
     return result;
 }
 ```
+
 **Use for:** Level-based problems, finding depth, right/left view
 
 ## LeetCode Problems (20)
 
 ### Linked Lists (10 problems)
+
 1. **Reverse Linked List** (Easy) — Iterative and recursive
 2. **Merge Two Sorted Lists** (Easy) — Dummy head technique
 3. **Linked List Cycle** (Easy) — Floyd's algorithm
@@ -789,6 +1083,7 @@ public List<List<Integer>> levelOrder(TreeNode root) {
 10. **Copy List with Random Pointer** (Medium) — Hash map or interleaving
 
 ### Trees Basics (10 problems)
+
 11. **Maximum Depth of Binary Tree** (Easy) — Basic DFS recursion
 12. **Same Tree** (Easy) — Parallel recursion
 13. **Invert Binary Tree** (Easy) — Recursive swap
@@ -800,59 +1095,86 @@ public List<List<Integer>> levelOrder(TreeNode root) {
 19. **Binary Tree Right Side View** (Medium) — BFS or DFS
 20. **Count Good Nodes in Binary Tree** (Medium) — DFS with max tracking
 
-## SQL Project: Week 4
+## Project: Week 4 — MVP SHIP DATE 🚀
 
-### New Tables
-```sql
--- Tags for tickets
-CREATE TABLE tags (
-    tag_id SERIAL PRIMARY KEY,
-    name VARCHAR(50) UNIQUE NOT NULL
-);
+### Goals
 
-CREATE TABLE ticket_tags (
-    ticket_id INTEGER REFERENCES tickets(ticket_id) ON DELETE CASCADE,
-    tag_id INTEGER REFERENCES tags(tag_id) ON DELETE CASCADE,
-    PRIMARY KEY (ticket_id, tag_id)
-);
+- [ ] Complete React frontend
+- [ ] Deploy backend (Railway or Render)
+- [ ] Deploy frontend (Vercel or Netlify)
+- [ ] **PUT IT ON YOUR RESUME**
 
--- SLA (Service Level Agreement) tracking
-CREATE TABLE sla_policies (
-    sla_id SERIAL PRIMARY KEY,
-    priority VARCHAR(10),
-    response_hours INTEGER,
-    resolution_hours INTEGER
-);
+### MVP Features Checklist
+
+**Backend (Spring Boot):**
+- [x] Users CRUD
+- [x] Tickets CRUD
+- [x] Categories
+- [x] Ticket assignments
+- [ ] Filter tickets by status/priority
+
+**Frontend (React):**
+- [ ] Ticket list view
+- [ ] Ticket detail view
+- [ ] Create ticket form
+- [ ] Edit ticket form
+- [ ] Status/priority filters
+- [ ] Basic navigation
+
+### Deployment — Backend (Railway)
+
+1. Push Spring Boot project to GitHub
+2. Go to railway.app, connect GitHub
+3. Add PostgreSQL plugin
+4. Set environment variables:
+   ```
+   SPRING_DATASOURCE_URL=${DATABASE_URL}
+   ```
+5. Deploy
+
+### Deployment — Frontend (Vercel)
+
+1. Push React project to GitHub
+2. Go to vercel.com, connect GitHub
+3. Set environment variable:
+   ```
+   VITE_API_URL=https://your-railway-app.railway.app/api
+   ```
+4. Deploy
+
+### Update api.js for Production
+
+```javascript
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 ```
 
 ### Week 4 Tasks
-- [ ] Create tags and ticket_tags tables
-- [ ] Insert tags (bug, feature-request, question, etc.)
-- [ ] Tag existing tickets
-- [ ] Practice GROUP BY with HAVING
-- [ ] Write aggregation queries:
-  - Tickets per status
-  - Average resolution time by priority
-  - Agents ranked by tickets resolved
-- [ ] Write subquery: "Tickets with more than average comments"
+
+- [ ] Add status/priority filter endpoints
+- [ ] Complete all React components
+- [ ] Add basic styling (keep it simple)
+- [ ] Deploy backend to Railway
+- [ ] Deploy frontend to Vercel
+- [ ] Test production deployment
+- [ ] **UPDATE RESUME WITH PROJECT**
+- [ ] **UPDATE LINKEDIN WITH PROJECT**
 
 ---
 
 # Week 5: Trees (Advanced) & Graphs
-### *Act III: The Hero Enters the Forest (Of Nodes)*
+
+### *Act III: The Hero Enters the Forest (Of Nodes) — With a Deployed Project*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
-**Chapter 4: Trees and Graphs (continued)** — BST operations, graph representations, BFS/DFS on graphs
 
-## Learning SQL
-**Chapter 10: Joins Revisited** — OUTER JOINs, self-joins, cross joins  
-**Chapter 11: Conditional Logic** — CASE expressions, COALESCE, NULLIF
+**Chapter 4: Trees and Graphs (continued)** — BST operations, graph representations, BFS/DFS on graphs
 
 ## Templates to Memorize
 
 ### BST Search and Validation
+
 ```java
 public TreeNode searchBST(TreeNode root, int target) {
     if (root == null || root.val == target) {
@@ -875,9 +1197,11 @@ private boolean isValidBST(TreeNode node, long min, long max) {
            isValidBST(node.right, node.val, max);
 }
 ```
+
 **Use for:** BST search, validation, insert, delete
 
 ### Graph BFS
+
 ```java
 public Set<Integer> bfs(Map<Integer, List<Integer>> graph, int start) {
     Set<Integer> visited = new HashSet<>();
@@ -898,9 +1222,11 @@ public Set<Integer> bfs(Map<Integer, List<Integer>> graph, int start) {
     return visited;
 }
 ```
+
 **Use for:** Shortest path (unweighted), level-based problems, connectivity
 
 ### Graph DFS
+
 ```java
 public void dfs(Map<Integer, List<Integer>> graph, int node, Set<Integer> visited) {
     visited.add(node);
@@ -911,9 +1237,11 @@ public void dfs(Map<Integer, List<Integer>> graph, int node, Set<Integer> visite
     }
 }
 ```
+
 **Use for:** Connectivity, cycle detection, path finding, topological concepts
 
 ### Grid BFS (Islands Pattern)
+
 ```java
 public int numIslands(char[][] grid) {
     if (grid == null || grid.length == 0) return 0;
@@ -926,10 +1254,9 @@ public int numIslands(char[][] grid) {
         for (int c = 0; c < cols; c++) {
             if (grid[r][c] == '1') {
                 count++;
-                // BFS to mark all connected land
                 Queue<int[]> queue = new LinkedList<>();
                 queue.offer(new int[]{r, c});
-                grid[r][c] = '0';  // mark visited
+                grid[r][c] = '0';
                 
                 while (!queue.isEmpty()) {
                     int[] cell = queue.poll();
@@ -949,11 +1276,13 @@ public int numIslands(char[][] grid) {
     return count;
 }
 ```
+
 **Use for:** Island counting, flood fill, any grid connectivity
 
 ## LeetCode Problems (20)
 
 ### Trees Advanced (10 problems)
+
 1. **Validate Binary Search Tree** (Medium) — Range checking
 2. **Lowest Common Ancestor of BST** (Medium) — BST property
 3. **Lowest Common Ancestor of Binary Tree** (Medium) — General tree
@@ -966,6 +1295,7 @@ public int numIslands(char[][] grid) {
 10. **Path Sum III** (Medium) — Prefix sum on tree
 
 ### Graphs (10 problems)
+
 11. **Number of Islands** (Medium) — Grid BFS/DFS
 12. **Clone Graph** (Medium) — BFS with hash map
 13. **Max Area of Island** (Medium) — Grid DFS with counting
@@ -977,49 +1307,46 @@ public int numIslands(char[][] grid) {
 19. **Number of Connected Components** (Medium) — Union-Find or DFS
 20. **Graph Valid Tree** (Medium) — Cycle detection + connectivity
 
-## SQL Project: Week 5
+## Project: Week 5 — Feature: Comments System
 
 ### New Table
+
 ```sql
--- Audit log for ticket changes
-CREATE TABLE ticket_audit_log (
-    log_id SERIAL PRIMARY KEY,
-    ticket_id INTEGER REFERENCES tickets(ticket_id),
-    changed_by INTEGER REFERENCES users(user_id),
-    field_changed VARCHAR(50),
-    old_value TEXT,
-    new_value TEXT,
-    changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE ticket_comments (
+    comment_id SERIAL PRIMARY KEY,
+    ticket_id INTEGER REFERENCES tickets(ticket_id) ON DELETE CASCADE,
+    user_id INTEGER REFERENCES users(user_id),
+    comment_text TEXT NOT NULL,
+    is_internal BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
 ### Week 5 Tasks
-- [ ] Create audit log table
-- [ ] Insert sample audit entries
-- [ ] Practice LEFT/RIGHT/FULL OUTER JOINs
-- [ ] Write self-join: "Find tickets reassigned from one agent to another"
-- [ ] Practice CASE expressions:
-  - Ticket age buckets (< 1 day, 1-3 days, 3-7 days, > 7 days)
-  - Priority scoring system
-- [ ] Write query: "Show all tickets with their current agent and previous agent (if reassigned)"
+
+- [ ] Create ticket_comments table
+- [ ] Create CommentRepository
+- [ ] Create CommentController (GET by ticket, POST)
+- [ ] Add comments section to ticket detail view in React
+- [ ] Add comment form component
+- [ ] Continue interview applications
 
 ---
 
 # Week 6: Backtracking & Heaps
+
 ### *Act III Continued: The Hero Tries Every Path (Recursively)*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
-**Chapter 8: Recursion and Dynamic Programming** — Focus on backtracking section, permutations/combinations
 
-## Learning SQL
-**Chapter 12: Transactions** — ACID, BEGIN/COMMIT/ROLLBACK  
-**Chapter 13: Indexes and Constraints** — CREATE INDEX, UNIQUE, CHECK
+**Chapter 8: Recursion and Dynamic Programming** — Focus on backtracking section, permutations/combinations
 
 ## Templates to Memorize
 
 ### Backtracking — Subsets
+
 ```java
 public List<List<Integer>> subsets(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();
@@ -1028,18 +1355,20 @@ public List<List<Integer>> subsets(int[] nums) {
 }
 
 private void backtrack(int[] nums, int start, List<Integer> path, List<List<Integer>> result) {
-    result.add(new ArrayList<>(path));  // add current subset
+    result.add(new ArrayList<>(path));
     
     for (int i = start; i < nums.length; i++) {
-        path.add(nums[i]);           // make choice
+        path.add(nums[i]);
         backtrack(nums, i + 1, path, result);
-        path.remove(path.size() - 1); // undo choice
+        path.remove(path.size() - 1);
     }
 }
 ```
+
 **Use for:** All subsets, combinations, power set
 
 ### Backtracking — Permutations
+
 ```java
 public List<List<Integer>> permutations(int[] nums) {
     List<List<Integer>> result = new ArrayList<>();
@@ -1064,12 +1393,13 @@ private void backtrack(int[] nums, boolean[] used, List<Integer> path, List<List
     }
 }
 ```
+
 **Use for:** All permutations, arrangement problems
 
 ### Heap — Top K Pattern
+
 ```java
 public int[] topKLargest(int[] nums, int k) {
-    // Min heap of size k (keeps k largest)
     PriorityQueue<Integer> minHeap = new PriorityQueue<>();
     
     for (int num : nums) {
@@ -1086,13 +1416,15 @@ public int[] topKLargest(int[] nums, int k) {
     return result;
 }
 ```
+
 **Use for:** K largest/smallest, k most frequent
 
 ### Two Heaps — Median
+
 ```java
 class MedianFinder {
-    private PriorityQueue<Integer> small;  // max heap for lower half
-    private PriorityQueue<Integer> large;  // min heap for upper half
+    private PriorityQueue<Integer> small;  // max heap
+    private PriorityQueue<Integer> large;  // min heap
     
     public MedianFinder() {
         small = new PriorityQueue<>(Collections.reverseOrder());
@@ -1102,12 +1434,10 @@ class MedianFinder {
     public void addNum(int num) {
         small.offer(num);
         
-        // Balance: small's max <= large's min
         if (!small.isEmpty() && !large.isEmpty() && small.peek() > large.peek()) {
             large.offer(small.poll());
         }
         
-        // Size balance: small can have at most 1 more than large
         if (small.size() > large.size() + 1) {
             large.offer(small.poll());
         } else if (large.size() > small.size()) {
@@ -1123,11 +1453,13 @@ class MedianFinder {
     }
 }
 ```
+
 **Use for:** Running median, sliding window median
 
 ## LeetCode Problems (20)
 
 ### Backtracking (10 problems)
+
 1. **Subsets** (Medium) — Core template
 2. **Subsets II** (Medium) — With duplicates
 3. **Permutations** (Medium) — Core template
@@ -1140,6 +1472,7 @@ class MedianFinder {
 10. **Word Search** (Medium) — Grid backtracking
 
 ### Heaps (10 problems)
+
 11. **Kth Largest Element in Array** (Medium) — Heap or quickselect
 12. **Top K Frequent Elements** (Medium) — Heap with frequency map
 13. **K Closest Points to Origin** (Medium) — Min heap
@@ -1151,48 +1484,46 @@ class MedianFinder {
 19. **Reorganize String** (Medium) — Max heap for spacing
 20. **Meeting Rooms II** (Medium) — Min heap for end times
 
-## SQL Project: Week 6
+## Project: Week 6 — Feature: Dashboard Metrics
 
-### Schema Updates
-```sql
--- Add indexes for common queries
-CREATE INDEX idx_tickets_status ON tickets(status);
-CREATE INDEX idx_tickets_priority ON tickets(priority);
-CREATE INDEX idx_tickets_created ON tickets(created_at);
-CREATE INDEX idx_tickets_user ON tickets(user_id);
-CREATE INDEX idx_comments_ticket ON ticket_comments(ticket_id);
+### New Endpoints
 
--- Add constraint
-ALTER TABLE tickets ADD CONSTRAINT valid_status_priority 
-    CHECK (NOT (priority = 'urgent' AND status = 'closed'));
+```java
+@GetMapping("/api/dashboard/stats")
+public DashboardStats getStats() {
+    return new DashboardStats(
+        ticketService.countByStatus("open"),
+        ticketService.countByStatus("in_progress"),
+        ticketService.countByStatus("resolved"),
+        ticketService.getAverageResolutionTime()
+    );
+}
 ```
 
 ### Week 6 Tasks
-- [ ] Add indexes to commonly queried columns
-- [ ] Use EXPLAIN ANALYZE to compare query performance
-- [ ] Practice transactions:
-  - Transfer ticket between agents (atomic operation)
-  - Batch status updates
-- [ ] Write query with explicit transaction handling
-- [ ] Add CHECK constraints for data integrity
+
+- [ ] Create dashboard stats endpoint
+- [ ] Create DashboardStats DTO
+- [ ] Build Dashboard component in React
+- [ ] Add simple charts (ticket counts by status/priority)
+- [ ] Continue interview applications
 
 ---
 
 # Week 7: Dynamic Programming (1D)
+
 ### *The Dark Night of the Soul: DP Makes Everything Click (Or Doesn't)*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
-**Chapter 8: Recursion and Dynamic Programming (continued)** — Memoization, bottom-up approach, classic DP problems
 
-## Learning SQL
-**Chapter 14: Views** — CREATE VIEW, updatable views, materialized views  
-**Chapter 15: Metadata** — Information schema, system catalogs
+**Chapter 8: Recursion and Dynamic Programming (continued)** — Memoization, bottom-up approach, classic DP problems
 
 ## Templates to Memorize
 
 ### Top-Down Memoization
+
 ```java
 public int fibMemo(int n) {
     int[] memo = new int[n + 1];
@@ -1207,9 +1538,11 @@ private int fibHelper(int n, int[] memo) {
     return memo[n];
 }
 ```
+
 **Use for:** Understanding subproblem structure, easier to conceptualize
 
 ### Bottom-Up Tabulation
+
 ```java
 public int fibTab(int n) {
     if (n <= 1) return n;
@@ -1222,9 +1555,11 @@ public int fibTab(int n) {
     return dp[n];
 }
 ```
+
 **Use for:** Production code, often more space-efficient
 
 ### Space-Optimized DP
+
 ```java
 public int fibOptimized(int n) {
     if (n <= 1) return n;
@@ -1237,9 +1572,11 @@ public int fibOptimized(int n) {
     return prev1;
 }
 ```
+
 **Use for:** When only need previous 1-2 states
 
 ### Include/Exclude Pattern
+
 ```java
 public int houseRobber(int[] nums) {
     if (nums.length == 0) return 0;
@@ -1250,17 +1587,19 @@ public int houseRobber(int[] nums) {
     dp[1] = Math.max(nums[0], nums[1]);
     
     for (int i = 2; i < nums.length; i++) {
-        dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);  // skip or take
+        dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
     }
     
     return dp[nums.length - 1];
 }
 ```
+
 **Use for:** House robber, stock problems, any skip/take decision
 
 ## LeetCode Problems (20)
 
 ### 1D Dynamic Programming (20 problems)
+
 1. **Climbing Stairs** (Easy) — Fibonacci variant
 2. **Min Cost Climbing Stairs** (Easy) — DP with cost
 3. **House Robber** (Medium) — Include/exclude
@@ -1282,75 +1621,38 @@ public int houseRobber(int[] nums) {
 19. **Jump Game II** (Medium) — Min jumps
 20. **Maximum Length of Pair Chain** (Medium) — Sort + DP or greedy
 
-## SQL Project: Week 7
-
-### Views
-```sql
--- View: Active tickets with full details
-CREATE VIEW active_tickets_detail AS
-SELECT 
-    t.ticket_id,
-    t.subject,
-    t.status,
-    t.priority,
-    t.created_at,
-    u.full_name AS customer_name,
-    u.email AS customer_email,
-    c.name AS category,
-    a.full_name AS assigned_agent,
-    (SELECT COUNT(*) FROM ticket_comments tc WHERE tc.ticket_id = t.ticket_id) AS comment_count
-FROM tickets t
-JOIN users u ON t.user_id = u.user_id
-LEFT JOIN categories c ON t.category_id = c.category_id
-LEFT JOIN ticket_assignments ta ON t.ticket_id = ta.ticket_id
-LEFT JOIN users a ON ta.agent_id = a.user_id
-WHERE t.status NOT IN ('resolved', 'closed');
-
--- View: Agent performance metrics
-CREATE VIEW agent_metrics AS
-SELECT 
-    u.user_id,
-    u.full_name,
-    COUNT(DISTINCT ta.ticket_id) AS tickets_assigned,
-    COUNT(DISTINCT CASE WHEN t.status = 'resolved' THEN t.ticket_id END) AS tickets_resolved,
-    ROUND(AVG(EXTRACT(EPOCH FROM (t.updated_at - t.created_at))/3600), 2) AS avg_resolution_hours
-FROM users u
-LEFT JOIN ticket_assignments ta ON u.user_id = ta.agent_id
-LEFT JOIN tickets t ON ta.ticket_id = t.ticket_id
-WHERE u.role = 'agent'
-GROUP BY u.user_id, u.full_name;
-```
+## Project: Week 7 — Feature: Search & Filters
 
 ### Week 7 Tasks
-- [ ] Create active_tickets_detail view
-- [ ] Create agent_metrics view
-- [ ] Query information_schema for table metadata
-- [ ] Practice view usage in complex queries
-- [ ] Write documentation comments for tables/columns
+
+- [ ] Add search endpoint (search tickets by subject/description)
+- [ ] Add advanced filter endpoint (combine status, priority, date range)
+- [ ] Build search component in React
+- [ ] Add filter UI with dropdowns
+- [ ] Polish existing features
+- [ ] Heavy focus on interview prep
 
 ---
 
 # Week 8: DP (2D), Tries, Union-Find, Intervals
+
 ### *The Final Battle: The Hero Faces All Remaining Patterns At Once*
 
 [↑ Back to Navigation](#-quick-navigation)
 
 ## CTCI Reading
+
 **Chapter 8 (continued):** 2D DP patterns  
 **Chapter 16: Moderate Problems** — Interval problems, various techniques
-
-## Learning SQL
-**Chapter 16: Analytic Functions** — Window functions: ROW_NUMBER, RANK, LAG, LEAD, SUM OVER  
-**Review:** Go back through any weak areas
 
 ## Templates to Memorize
 
 ### 2D DP Grid
+
 ```java
 public int uniquePaths(int m, int n) {
     int[][] dp = new int[m][n];
     
-    // First row and column are all 1s
     for (int i = 0; i < m; i++) dp[i][0] = 1;
     for (int j = 0; j < n; j++) dp[0][j] = 1;
     
@@ -1362,9 +1664,11 @@ public int uniquePaths(int m, int n) {
     return dp[m - 1][n - 1];
 }
 ```
+
 **Use for:** Path counting, grid minimum/maximum paths
 
 ### Trie Implementation
+
 ```java
 class TrieNode {
     Map<Character, TrieNode> children = new HashMap<>();
@@ -1406,9 +1710,11 @@ class Trie {
     }
 }
 ```
+
 **Use for:** Prefix matching, autocomplete, word search problems
 
 ### Union-Find with Path Compression
+
 ```java
 class UnionFind {
     private int[] parent;
@@ -1424,7 +1730,7 @@ class UnionFind {
     
     public int find(int x) {
         if (parent[x] != x) {
-            parent[x] = find(parent[x]);  // path compression
+            parent[x] = find(parent[x]);
         }
         return parent[x];
     }
@@ -1433,7 +1739,6 @@ class UnionFind {
         int px = find(x), py = find(y);
         if (px == py) return false;
         
-        // Union by rank
         if (rank[px] < rank[py]) {
             int temp = px; px = py; py = temp;
         }
@@ -1445,9 +1750,11 @@ class UnionFind {
     }
 }
 ```
+
 **Use for:** Connected components, cycle detection, dynamic connectivity
 
 ### Interval Merge
+
 ```java
 public int[][] mergeIntervals(int[][] intervals) {
     Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
@@ -1464,11 +1771,13 @@ public int[][] mergeIntervals(int[][] intervals) {
     return merged.toArray(new int[merged.size()][]);
 }
 ```
+
 **Use for:** Merge overlapping intervals, insert interval, meeting rooms
 
 ## LeetCode Problems (20)
 
 ### 2D DP (5 problems)
+
 1. **Unique Paths** (Medium) — Basic grid DP
 2. **Unique Paths II** (Medium) — With obstacles
 3. **Minimum Path Sum** (Medium) — Grid minimum
@@ -1476,6 +1785,7 @@ public int[][] mergeIntervals(int[][] intervals) {
 5. **Edit Distance** (Medium) — String transformation
 
 ### Tries (5 problems)
+
 6. **Implement Trie** (Medium) — Core operations
 7. **Design Add and Search Words** (Medium) — Trie with wildcards
 8. **Word Search II** (Hard) — Trie + backtracking
@@ -1483,6 +1793,7 @@ public int[][] mergeIntervals(int[][] intervals) {
 10. **Search Suggestions System** (Medium) — Autocomplete
 
 ### Union-Find (5 problems)
+
 11. **Number of Connected Components** (Medium) — Basic UF
 12. **Redundant Connection** (Medium) — Cycle detection
 13. **Accounts Merge** (Medium) — Group by common element
@@ -1490,60 +1801,28 @@ public int[][] mergeIntervals(int[][] intervals) {
 15. **Number of Provinces** (Medium) — UF or DFS
 
 ### Intervals (5 problems)
+
 16. **Merge Intervals** (Medium) — Core template
 17. **Insert Interval** (Medium) — Insert and merge
 18. **Non-overlapping Intervals** (Medium) — Min removals
 19. **Meeting Rooms** (Easy) — Overlap detection
 20. **Meeting Rooms II** (Medium) — Min rooms needed
 
-## SQL Project: Week 8 — Final Polish
-
-### Window Functions
-```sql
--- Running total of tickets created per day
-SELECT 
-    DATE(created_at) AS date,
-    COUNT(*) AS daily_tickets,
-    SUM(COUNT(*)) OVER (ORDER BY DATE(created_at)) AS running_total
-FROM tickets
-GROUP BY DATE(created_at)
-ORDER BY date;
-
--- Rank agents by tickets resolved this month
-SELECT 
-    u.full_name,
-    COUNT(*) AS resolved_count,
-    RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
-FROM users u
-JOIN ticket_assignments ta ON u.user_id = ta.agent_id
-JOIN tickets t ON ta.ticket_id = t.ticket_id
-WHERE t.status = 'resolved'
-    AND t.updated_at >= DATE_TRUNC('month', CURRENT_DATE)
-GROUP BY u.user_id, u.full_name;
-
--- Compare each ticket's resolution time to category average
-SELECT 
-    t.ticket_id,
-    t.subject,
-    c.name AS category,
-    EXTRACT(EPOCH FROM (t.updated_at - t.created_at))/3600 AS resolution_hours,
-    AVG(EXTRACT(EPOCH FROM (t.updated_at - t.created_at))/3600) 
-        OVER (PARTITION BY t.category_id) AS category_avg_hours
-FROM tickets t
-JOIN categories c ON t.category_id = c.category_id
-WHERE t.status = 'resolved';
-```
+## Project: Week 8 — Final Polish
 
 ### Week 8 Tasks
-- [ ] Master window functions: ROW_NUMBER, RANK, DENSE_RANK
-- [ ] Practice LAG/LEAD for comparing consecutive rows
-- [ ] Write running totals and moving averages
-- [ ] Create final documentation for your ticket database
-- [ ] Export schema for use in larger project
+
+- [ ] Bug fixes and polish
+- [ ] Improve UI/UX
+- [ ] Add any missing error handling
+- [ ] Update README with screenshots
+- [ ] Record demo video (optional but nice)
+- [ ] **FULL FOCUS ON INTERVIEWS**
 
 ---
 
 # 📊 Progress Tracker
+
 ### *The Montage Checklist*
 
 [↑ Back to Navigation](#-quick-navigation)
@@ -1552,66 +1831,68 @@ WHERE t.status = 'resolved';
 
 ### Week 1: Arrays & Hashing
 - [x] Read CTCI Chapter 1
-- [ ] Read Learning SQL Chapters 1-3
+- [ ] Read Learning SQL Chapters 2-3
 - [x] Memorize 3 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Set up PostgreSQL + create ticket database schema
-- [ ] Insert sample data
+- [ ] Set up PostgreSQL + create schema
+- [ ] Generate Spring Boot project
+- [ ] Create model classes
 
 ### Week 2: Two Pointers & Sliding Window
 - [ ] Read Learning SQL Chapters 4-5
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Add ticket_assignments table
-- [ ] Practice JOIN queries
+- [ ] Build JDBC repository layer
+- [ ] Create REST controllers
+- [ ] Test with Postman
 
 ### Week 3: Binary Search & Stacks
 - [ ] Read CTCI Chapters 3, 10
 - [ ] Read Learning SQL Chapters 6-7
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Add ticket_comments table
-- [ ] Practice string/date functions
+- [ ] Learn React basics
+- [ ] Set up Vite + React
+- [ ] Connect frontend to backend
 
-### Week 4: Linked Lists & Trees Basics
+### Week 4: Linked Lists & Trees Basics — **MVP SHIP**
 - [ ] Read CTCI Chapters 2, 4
 - [ ] Read Learning SQL Chapters 8-9
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Add tags tables
-- [ ] Practice GROUP BY and subqueries
+- [ ] Complete React frontend
+- [ ] Deploy backend to Railway
+- [ ] Deploy frontend to Vercel
+- [ ] **UPDATE RESUME**
+- [ ] **UPDATE LINKEDIN**
 
 ### Week 5: Trees Advanced & Graphs
 - [ ] Read CTCI Chapter 4 (graphs)
-- [ ] Read Learning SQL Chapters 10-11
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Add audit log table
-- [ ] Practice OUTER JOINs and CASE
+- [ ] Add comments feature
+- [ ] Interview applications
 
 ### Week 6: Backtracking & Heaps
 - [ ] Read CTCI Chapter 8 (backtracking)
-- [ ] Read Learning SQL Chapters 12-13
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Add indexes
-- [ ] Practice transactions
+- [ ] Add dashboard metrics
+- [ ] Interview applications
 
 ### Week 7: Dynamic Programming (1D)
 - [ ] Read CTCI Chapter 8 (DP)
-- [ ] Read Learning SQL Chapters 14-15
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Create views
-- [ ] Query metadata
+- [ ] Add search/filter features
+- [ ] Interview prep heavy
 
 ### Week 8: DP 2D, Tries, Union-Find, Intervals
 - [ ] Read CTCI Chapter 8, 16
-- [ ] Read Learning SQL Chapter 16
 - [ ] Memorize 4 templates from memory
 - [ ] Complete 20 LeetCode problems
-- [ ] Master window functions
-- [ ] Finalize database documentation
+- [ ] Final polish
+- [ ] **INTERVIEW MODE**
 
 ---
 
@@ -1622,22 +1903,24 @@ WHERE t.status = 'resolved';
 [↑ Back to Navigation](#-quick-navigation)
 
 **After 8 Weeks:**
+
 - ✅ 160 algorithm problems solved
 - ✅ 30+ templates memorized cold (in Java! ☕)
 - ✅ CTCI read cover-to-cover (relevant chapters)
-- ✅ Learning SQL completed
-- ✅ Production-ready ticket support database
+- ✅ SQL fundamentals complete (Ch 2-9)
+- ✅ **Full-stack project deployed and on resume**
+- ✅ Spring Boot + JDBC + PostgreSQL + React
 - ✅ **REDEMPTION ARC COMPLETE** 🏆
 
 *[Inspirational music swells]*
 
 *[Hero walks into interview room with slow-motion confidence]*
 
-*[Interviewer asks about binary search]*
+*[Interviewer asks about system design]*
 
-*[Hero smiles knowingly]*
+*[Hero pulls up deployed ticket system]*
 
-*[Writes Java without looking up syntax]*
+*[Interviewer nods approvingly]*
 
 ---
 
@@ -1650,10 +1933,10 @@ WHERE t.status = 'resolved';
 1. **Write templates from memory first** — If you can't write it cold, you haven't learned it
 2. **Understand, don't memorize solutions** — Know WHY the pattern works
 3. **Time yourself** — Medium problems in 25 min, Hard in 40 min
-4. **Review on Sundays** — Re-attempt problems you struggled with
+4. **Ship by Dec 31** — A deployed project beats a perfect plan
 5. **Keep job apps going** — 3-5 applications daily, non-negotiable
 6. **Trust the process** — Consistent daily effort beats sporadic cramming
-7. **Remember why you're here** — Baby #2 is coming, and this hero has bills to pay
+7. **Remember why you're here** — Baby #2 is coming, January deadline is real
 8. **Java will feel natural by Week 3** — Push through the initial friction
 
 ---
@@ -1663,18 +1946,19 @@ WHERE t.status = 'resolved';
 [↑ Back to Navigation](#-quick-navigation)
 
 **Starring:** Tiger 🐯  
-**Supporting Cast:** Claude, NeetCode, CTCI, Learning SQL, PostgreSQL, Java ☕  
+**Supporting Cast:** Claude, NeetCode, CTCI, Learning SQL, PostgreSQL, Spring Boot, React, Java ☕  
 **Produced by:** Necessity  
 **Directed by:** Determination  
 **Original Score:** Lo-fi beats to grind LeetCode to  
-**Language:** Java — because we're going enterprise-ready for this redemption
+**Tech Stack:** Spring Boot + JDBC + PostgreSQL + React + Vite  
+**Deadline:** End of January or bust
 
 *No recruiters were harmed in the making of this redemption arc.*
 
-*Stay tuned for the sequel: "employment-arc" (coming Q1 2025)*
+*Coming soon: "employment-arc" (Q1 2025)*
 
 ---
 
-**You've got this, Tiger. 8 weeks of focused work and you'll be ready. Let's get it! 🔥**
+**You've got this, Tiger. Ship by December 31, interview in January, land the role. Let's get it! 🔥**
 
 *[Roll credits]*
